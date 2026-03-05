@@ -85,7 +85,7 @@ export const translations = {
     },
     about: {
       title: 'Hakkımızda',
-      p1: 'Tüm yemeklerimiz Helal'dir. Size hizmet etmek ve adil bir fiyata en iyi yemekleri ve içecekleri sunmak için buradayız. Bize ulaşmak kolay ve iş yapmak dostane.',
+      p1: 'Tüm yemeklerimiz Helal\'dir. Size hizmet etmek ve adil bir fiyata en iyi yemekleri ve içecekleri sunmak için buradayız. Bize ulaşmak kolay ve iş yapmak dostane.',
       p2: 'Popüler Geleneksel İngiliz Kahvaltımızı ve İmza Burger\'ımızı deneyin.',
       p3: 'Kendinizi hasta veya tembel hissediyorsanız, biz size gelebiliriz.',
     },
