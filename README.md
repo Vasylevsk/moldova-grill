@@ -1,15 +1,18 @@
-# Rada - Premium Halal Restaurant Website
+# Rada Coffee & Eatery - Premium Website
 
-A premium, conversion-focused restaurant demo website built with React, TailwindCSS, and Framer Motion. Designed to impress restaurant owners and showcase the finest Halal dining experience.
+A premium, award-winning restaurant website built with React, TailwindCSS, and Framer Motion.
 
 ## 🚀 Features
 
-- **Premium Design**: Awwwards-style minimal luxury restaurant design
-- **Mobile-First**: Responsive design that scales beautifully from mobile to desktop
+- **Premium Design**: Award-winning minimal luxury restaurant design
+- **Mobile-First**: Perfect responsive design from mobile to desktop
 - **Bilingual Support**: English and Turkish language toggle
-- **Smooth Animations**: Framer Motion animations for a premium feel
-- **Conversion-Focused**: Strong CTAs and delivery platform integration
-- **GitHub Pages Ready**: Configured for easy deployment
+- **Smooth Animations**: Framer Motion animations throughout
+- **Parallax Effects**: Enhanced parallax hero image
+- **Elegant Transitions**: Beautiful section dividers and scroll reveals
+- **Image Zoom Effects**: Hover zoom on food images
+- **Button Glows**: Subtle glow effects on interactive elements
+- **Loading Animation**: Elegant page loader
 
 ## 🛠️ Tech Stack
 
@@ -34,6 +37,31 @@ npm run build
 npm run preview
 ```
 
+## 🌐 GitHub Pages Deployment
+
+The website is configured for automatic deployment to GitHub Pages.
+
+### Setup Instructions:
+
+1. **Enable GitHub Pages**:
+   - Go to your repository: https://github.com/Vasylevsk/radacafe
+   - Click on **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
+   - Save the settings
+
+2. **Automatic Deployment**:
+   - The GitHub Actions workflow will automatically deploy when you push to `main` branch
+   - After the first deployment, your site will be available at:
+     ```
+     https://vasylevsk.github.io/radacafe/
+     ```
+
+3. **Manual Deployment** (if needed):
+   ```bash
+   npm run build
+   # The dist folder will be deployed automatically via GitHub Actions
+   ```
+
 ## 🎨 Design System
 
 - **Background Colors**: `#0a0a0a` (dark-bg), `#111111` (dark-section)
@@ -42,31 +70,21 @@ npm run preview
 
 ## 📱 Sections
 
-1. **Hero**: Premium welcome section with CTAs
-2. **About**: Restaurant information and features
-3. **Menu**: Elegant food cards with pricing
+1. **Hero**: Full-screen parallax hero with CTAs
+2. **About**: Restaurant information with image
+3. **Menu**: Categorized menu with food cards
 4. **Gallery**: Instagram-style food gallery
-5. **Footer**: Delivery CTAs and contact information
+5. **Footer**: Contact info and delivery links
 
-## 🌐 Language Support
+## 🌍 Language Support
 
-The website supports English and Turkish with a simple toggle switch in the navbar. All content is fully translated.
-
-## 🚀 Deployment
-
-### GitHub Pages
-
-1. Push code to GitHub repository
-2. The GitHub Actions workflow will automatically deploy to GitHub Pages
-3. Make sure to update the `base` path in `vite.config.js` to match your repository name
-
-### Manual Deployment
-
-```bash
-npm run build
-# Deploy the `dist` folder to your hosting service
-```
+The website supports English and Turkish with a toggle switch in the navbar. All content is fully translated.
 
 ## 📄 License
 
-This is a demo website for Rada restaurant.
+This is a demo website for Rada Coffee & Eatery.
+
+## 🔗 Live Site
+
+Once deployed, your site will be available at:
+**https://vasylevsk.github.io/radacafe/**
