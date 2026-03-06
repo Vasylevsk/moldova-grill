@@ -33,12 +33,12 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #3B82F6;
+    background: #1E40AF;
     border-radius: 4px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #60A5FA;
+    background: #3B82F6;
   }
 }
 
@@ -60,11 +60,11 @@
   }
   
   .premium-glow {
-    box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 40px rgba(30, 64, 175, 0.35);
   }
   
   .button-glow {
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 0 20px rgba(30, 64, 175, 0.7), 0 0 40px rgba(30, 64, 175, 0.5);
   }
   
   .button-glow-hover {
@@ -72,7 +72,7 @@
   }
   
   .button-glow-hover:hover {
-    box-shadow: 0 0 30px rgba(59, 130, 246, 0.8), 0 0 60px rgba(59, 130, 246, 0.5);
+    box-shadow: 0 0 30px rgba(30, 64, 175, 0.9), 0 0 60px rgba(30, 64, 175, 0.6);
   }
   
   .elegant-divider {
@@ -90,9 +90,9 @@
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(59, 130, 246, 0.5) 20%,
-      rgba(59, 130, 246, 0.7) 50%,
-      rgba(59, 130, 246, 0.5) 80%,
+      rgba(30, 64, 175, 0.6) 20%,
+      rgba(30, 64, 175, 0.8) 50%,
+      rgba(30, 64, 175, 0.6) 80%,
       transparent
     );
   }
@@ -109,7 +109,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #3B82F6, #60A5FA);
+    background: linear-gradient(90deg, #1E40AF, #3B82F6);
     transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
   }
   
@@ -161,7 +161,7 @@
   .loader-logo {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    color: #3B82F6;
+    color: #1E40AF;
     margin-bottom: 2rem;
     opacity: 0;
     animation: fadeInUp 0.8s ease-out 0.2s forwards;
@@ -170,7 +170,7 @@
   .loader-line {
     width: 200px;
     height: 2px;
-    background: rgba(59, 130, 246, 0.3);
+    background: rgba(30, 64, 175, 0.35);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -183,7 +183,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, #3B82F6, transparent);
+    background: linear-gradient(90deg, transparent, #1E40AF, transparent);
     animation: loading 1.5s ease-in-out infinite;
   }
   

@@ -65,7 +65,7 @@ The website is configured for automatic deployment to GitHub Pages.
 ## 🎨 Design System
 
 - **Background Colors**: `#0a0a0a` (dark-bg), `#111111` (dark-section)
-- **Accent Color**: `#3B82F6` (premium navy blue)
+- **Accent Color**: `#1E40AF` (premium deep navy blue)
 - **Typography**: Playfair Display (headings), Inter (body)
 
 ## 📱 Sections

@@ -9,11 +9,11 @@ export default {
       colors: {
         'dark-bg': '#0d0d0d',
         'dark-section': '#151515',
-        'accent': '#3B82F6',
-        'accent-light': '#60A5FA',
-        'accent-dark': '#2563EB',
-        'navy-blue': '#3B82F6',
-        'deep-blue': '#2563EB',
+        'accent': '#1E40AF',
+        'accent-light': '#3B82F6',
+        'accent-dark': '#1E3A8A',
+        'navy-blue': '#1E40AF',
+        'deep-blue': '#1E3A8A',
       },
       fontFamily: {
         'serif': ['Playfair Display', 'Georgia', 'serif'],

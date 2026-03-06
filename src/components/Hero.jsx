@@ -153,12 +153,12 @@ const Hero = () => {
             onClick={scrollToMenu}
             className="group relative px-8 py-4 bg-accent text-white font-medium rounded-full text-base sm:text-lg overflow-hidden shadow-lg"
             style={{
-              boxShadow: '0 10px 30px rgba(59, 130, 246, 0.5), 0 0 0 1px rgba(59, 130, 246, 0.3)',
+              boxShadow: '0 10px 30px rgba(30, 64, 175, 0.6), 0 0 0 1px rgba(30, 64, 175, 0.4)',
             }}
             whileHover={{ 
               scale: 1.03, 
               y: -2,
-              boxShadow: '0 15px 40px rgba(59, 130, 246, 0.6), 0 0 0 1px rgba(59, 130, 246, 0.4)',
+              boxShadow: '0 15px 40px rgba(30, 64, 175, 0.7), 0 0 0 1px rgba(30, 64, 175, 0.5)',
             }}
             whileTap={{ scale: 0.97 }}
           >
@@ -180,8 +180,8 @@ const Hero = () => {
               whileHover={{ 
                 scale: 1.03, 
                 y: -2,
-                borderColor: 'rgba(59, 130, 246, 0.7)',
-                boxShadow: '0 15px 40px rgba(59, 130, 246, 0.3)',
+                borderColor: 'rgba(30, 64, 175, 0.8)',
+                boxShadow: '0 15px 40px rgba(30, 64, 175, 0.4)',
               }}
               whileTap={{ scale: 0.97 }}
             >
