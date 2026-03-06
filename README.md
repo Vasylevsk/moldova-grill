@@ -1,12 +1,12 @@
-# Rada Coffee & Eatery - Premium Website
+# Moldova Grill Restaurant - Premium Website
 
-A premium, award-winning restaurant website built with React, TailwindCSS, and Framer Motion.
+A premium restaurant website built with React, TailwindCSS, and Framer Motion.
 
 ## 🚀 Features
 
 - **Premium Design**: Award-winning minimal luxury restaurant design
 - **Mobile-First**: Perfect responsive design from mobile to desktop
-- **Bilingual Support**: English and Turkish language toggle
+- **Bilingual Support**: English and Romanian language toggle
 - **Smooth Animations**: Framer Motion animations throughout
 - **Parallax Effects**: Enhanced parallax hero image
 - **Elegant Transitions**: Beautiful section dividers and scroll reveals
@@ -65,7 +65,7 @@ The website is configured for automatic deployment to GitHub Pages.
 ## 🎨 Design System
 
 - **Background Colors**: `#0a0a0a` (dark-bg), `#111111` (dark-section)
-- **Accent Color**: `#849b45` (premium olive/matcha green)
+- **Accent Color**: `#3B82F6` (premium navy blue)
 - **Typography**: Playfair Display (headings), Inter (body)
 
 ## 📱 Sections
@@ -78,11 +78,11 @@ The website is configured for automatic deployment to GitHub Pages.
 
 ## 🌍 Language Support
 
-The website supports English and Turkish with a toggle switch in the navbar. All content is fully translated.
+The website supports English and Romanian with a toggle switch in the navbar. All content is fully translated.
 
 ## 📄 License
 
-This is a demo website for Rada Coffee & Eatery.
+This is a website for Moldova Grill Restaurant.
 
 ## 🔗 Live Site
 

@@ -23,11 +23,11 @@ const LanguageToggle = () => {
       <span className="text-white/30">|</span>
       <motion.span
         className={`text-sm font-semibold transition-colors duration-300 ${
-          language === 'tr' ? 'text-accent' : 'text-white/50'
+          language === 'ro' ? 'text-accent' : 'text-white/50'
         }`}
-        animate={language === 'tr' ? { scale: 1.1 } : { scale: 1 }}
+        animate={language === 'ro' ? { scale: 1.1 } : { scale: 1 }}
       >
-        TR
+        RO
       </motion.span>
     </motion.button>
   );

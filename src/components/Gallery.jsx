@@ -3,6 +3,13 @@ import { useLanguage } from '../context/LanguageContext';
 import SectionDivider from './SectionDivider';
 import { useRef } from 'react';
 
+// Import images
+import miciChips from '../assets/Mici&chips 4pc.png';
+import rusticBeefSoup from '../assets/Rustic Beef Soup.png';
+import moldavianStew from '../assets/Moldavian Stew.png';
+import chickenBurger from '../assets/Chicken Burger.png';
+import aboutImage from '../assets/about.png';
+
 const Gallery = () => {
   const { t } = useLanguage();
   const ref = useRef(null);
@@ -11,50 +18,50 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?auto=format&fit=crop&q=80&w=800',
-      alt: 'Matcha latte',
+      image: miciChips,
+      alt: 'Mici & Chips',
       span: 'col-span-1 sm:col-span-1',
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&q=80&w=800',
-      alt: 'Avocado toast',
+      image: rusticBeefSoup,
+      alt: 'Rustic Beef Soup',
       span: 'col-span-1 sm:col-span-1',
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&q=80&w=800',
-      alt: 'Pancakes',
+      image: moldavianStew,
+      alt: 'Moldavian Stew',
       span: 'col-span-1 sm:col-span-2',
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=800',
-      alt: 'Full English breakfast',
+      image: chickenBurger,
+      alt: 'Chicken Burger',
       span: 'col-span-1 sm:col-span-2',
     },
     {
       id: 5,
-      image: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&q=80&w=800',
-      alt: 'Cafe interior',
+      image: aboutImage,
+      alt: 'Restaurant Interior',
       span: 'col-span-1 sm:col-span-1',
     },
     {
       id: 6,
-      image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800',
-      alt: 'Coffee',
+      image: miciChips,
+      alt: 'Mici & Chips',
       span: 'col-span-1 sm:col-span-1',
     },
     {
       id: 7,
-      image: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&q=80&w=800',
-      alt: 'Brunch',
+      image: rusticBeefSoup,
+      alt: 'Rustic Beef Soup',
       span: 'col-span-1 sm:col-span-1',
     },
     {
       id: 8,
-      image: 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&q=80&w=800',
-      alt: 'Food',
+      image: moldavianStew,
+      alt: 'Moldavian Stew',
       span: 'col-span-1 sm:col-span-1',
     },
   ];

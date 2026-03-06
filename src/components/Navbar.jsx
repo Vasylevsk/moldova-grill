@@ -55,7 +55,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            RADA
+            MOLDOVA GRILL
             <motion.div
               className="absolute -bottom-1 left-0 right-0 h-0.5 bg-accent"
               initial={{ scaleX: 0 }}

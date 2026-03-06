@@ -8,10 +8,10 @@ const GoogleMaps = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   // Google Maps embed URL for the address
-  const mapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1234567890!2d-0.3083!3d51.4816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI4JzUzLjgiTiAwwrAxOCczMC4wIlc!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk";
+  const mapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1234567890!2d-0.5083!3d51.3916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766e8b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2s4%20Burwood%20Parade%2C%20Guildford%20St%2C%20Chertsey%20KT16%209AE!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk";
   
   // Direct link to Google Maps
-  const mapsLink = "https://www.google.com/maps/search/?api=1&query=2a+Trico+House+Brentford+London";
+  const mapsLink = "https://www.google.com/maps/search/?api=1&query=4+Burwood+Parade+Guildford+St+Chertsey+KT16+9AE";
 
   return (
     <>
@@ -38,7 +38,7 @@ const GoogleMaps = () => {
             Find Us
           </h2>
           <p className="text-lg sm:text-xl text-white/60 mb-6 font-light">
-            2a, Trico House, Brentford, London, United Kingdom
+            4, Burwood Parade, Guildford St, Chertsey KT16 9AE
           </p>
           <div className="w-24 h-1 bg-accent mx-auto" />
         </motion.div>
@@ -52,7 +52,7 @@ const GoogleMaps = () => {
           {/* Google Maps Embed */}
           <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1234567890!2d-0.3083!3d51.4816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760e8b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2s2a%20Trico%20House%2C%20Brentford%2C%20London!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1234567890!2d-0.5083!3d51.3916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766e8b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2s4%20Burwood%20Parade%2C%20Guildford%20St%2C%20Chertsey%20KT16%209AE!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -87,9 +87,9 @@ const GoogleMaps = () => {
               <div className="flex-1">
                 <h3 className="text-lg font-serif font-bold mb-1 text-white">Visit Us</h3>
                 <p className="text-white/70 text-sm leading-relaxed">
-                  2a, Trico House<br />
-                  Brentford, London<br />
-                  United Kingdom
+                  4, Burwood Parade<br />
+                  Guildford St, Chertsey<br />
+                  KT16 9AE, United Kingdom
                 </p>
               </div>
             </motion.a>

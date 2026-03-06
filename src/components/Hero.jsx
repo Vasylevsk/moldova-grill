@@ -147,39 +147,43 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
           <motion.button
             onClick={scrollToMenu}
-            className="group relative px-12 py-6 bg-accent text-dark-bg font-semibold rounded-full text-lg sm:text-xl overflow-hidden shadow-2xl"
+            className="group relative px-8 py-4 bg-accent text-white font-medium rounded-full text-base sm:text-lg overflow-hidden shadow-lg"
             style={{
-              boxShadow: '0 20px 60px rgba(132, 155, 69, 0.4), 0 0 0 1px rgba(132, 155, 69, 0.2)',
+              boxShadow: '0 10px 30px rgba(59, 130, 246, 0.5), 0 0 0 1px rgba(59, 130, 246, 0.3)',
             }}
             whileHover={{ 
-              scale: 1.05, 
-              y: -3,
-              boxShadow: '0 25px 70px rgba(132, 155, 69, 0.5), 0 0 0 1px rgba(132, 155, 69, 0.3)',
+              scale: 1.03, 
+              y: -2,
+              boxShadow: '0 15px 40px rgba(59, 130, 246, 0.6), 0 0 0 1px rgba(59, 130, 246, 0.4)',
             }}
-            whileTap={{ scale: 0.98 }}
+            whileTap={{ scale: 0.97 }}
           >
-            <span className="relative z-10 font-medium">{t.hero.cta}</span>
+            <span className="relative z-10">{t.hero.cta}</span>
             <motion.div
-              className="absolute inset-0 bg-white/30 rounded-full"
+              className="absolute inset-0 bg-white/20 rounded-full"
               initial={{ scale: 0, opacity: 0 }}
-              whileHover={{ scale: 1.5, opacity: 1 }}
-              transition={{ duration: 0.5 }}
+              whileHover={{ scale: 1.3, opacity: 1 }}
+              transition={{ duration: 0.4 }}
             />
           </motion.button>
 
             <motion.button
               onClick={scrollToOrder}
-              className="px-12 py-6 border-2 border-white/30 text-white font-semibold rounded-full hover:border-accent/50 hover:text-accent transition-all duration-300 text-lg sm:text-xl backdrop-blur-md bg-white/5"
-              whileHover={{ 
-                scale: 1.05, 
-                y: -3,
-                borderColor: 'rgba(132, 155, 69, 0.5)',
+              className="px-8 py-4 border-2 border-white/30 text-white font-medium rounded-full hover:border-accent hover:text-accent transition-all duration-300 text-base sm:text-lg backdrop-blur-md bg-white/5"
+              style={{
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)',
               }}
-              whileTap={{ scale: 0.98 }}
+              whileHover={{ 
+                scale: 1.03, 
+                y: -2,
+                borderColor: 'rgba(59, 130, 246, 0.7)',
+                boxShadow: '0 15px 40px rgba(59, 130, 246, 0.3)',
+              }}
+              whileTap={{ scale: 0.97 }}
             >
               {t.hero.order}
             </motion.button>

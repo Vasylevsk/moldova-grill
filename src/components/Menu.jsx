@@ -6,11 +6,10 @@ import OrderModal from './OrderModal';
 import { useRef, useState } from 'react';
 
 // Import images
-import traditionalFullEnglish from '../assets/Traditional Full English.png';
-import vegetarianFullEnglish from '../assets/Vegetarian Full English.png';
-import guiltFreeBreakfast from '../assets/Guilt Free Breakfast.png';
-import plantBasedBreakfast from '../assets/Plant based breakfast.png';
-import healthyAcaiBowl from '../assets/Healthy Acai Bowl.png';
+import miciChips from '../assets/Mici&chips 4pc.png';
+import rusticBeefSoup from '../assets/Rustic Beef Soup.png';
+import moldavianStew from '../assets/Moldavian Stew.png';
+import chickenBurger from '../assets/Chicken Burger.png';
 
 const Menu = () => {
   const { t, language } = useLanguage();
@@ -20,136 +19,201 @@ const Menu = () => {
 
   const menuCategories = {
     en: {
-      breakfast: 'BREAKFAST',
-      brunch: 'BRUNCH',
-      sweet: 'SWEET',
-      bowls: 'BOWLS',
+      featured: 'FEATURED',
+      soups: 'SOUPS',
+      salads: 'SALADS',
+      sideSalads: 'SIDE SALADS',
+      principal: 'MAIN DISHES',
     },
-    tr: {
-      breakfast: 'KAHVALTI',
-      brunch: 'BRUNCH',
-      sweet: 'TATLI',
-      bowls: 'KASELER',
+    ro: {
+      featured: 'RECOMANDATE',
+      soups: 'CIORBE',
+      salads: 'SALATE',
+      sideSalads: 'SALATE GARNITURĂ',
+      principal: 'FELURI PRINCIPALE',
     },
   };
 
   const menuItems = [
     {
-      category: 'breakfast',
+      category: 'featured',
       items: [
         { 
-          name: 'Traditional Full English', 
-          price: '£15.50', 
-          image: traditionalFullEnglish,
+          name: 'Classic Cheese Doughnuts / Papanași smântână și dulceață', 
+          price: '£9.90', 
+          image: '🍩',
+          popular: true,
+          description: 'Traditional Moldovan cheese doughnuts served with sour cream and jam'
+        },
+        { 
+          name: 'Mici & chips 4pcs / Mici cu cartofi prăjiți 4pcs', 
+          price: '£8.90', 
+          image: miciChips,
           imageType: 'photo',
           popular: true,
-          description: 'A hearty and traditional British breakfast served with sausage, turkey bacon, free-range eggs, seasoned grilled mushrooms, hash brown, grilled tomato (topped with nut-free pesto), baked beans & toast.'
+          description: 'Traditional Romanian grilled minced meat rolls served with chips'
         },
         { 
-          name: 'Vegetarian Full English', 
-          price: '£15.50', 
-          image: vegetarianFullEnglish,
-          imageType: 'photo',
-          description: 'A satisfying morning meal with free-range eggs, grilled halloumi, hash browns, baked beans, vegetarian sausage, seasoned grilled mushrooms, grilled tomato (topped with nut-free pesto), avocado, roasted mixed seeds & toast.'
-        },
-        { 
-          name: 'Guilt Free Breakfast', 
-          price: '£15.50', 
-          image: guiltFreeBreakfast,
-          imageType: 'photo',
-          description: 'A low-carb, healthy kickstart to your day with avocado, roasted mixed seeds, fresh tomato, steamed spinach, free-range poached eggs, seasoned grilled mushrooms and baked beans.'
-        },
-        { 
-          name: 'Plant based breakfast', 
-          price: '£15.50', 
-          image: plantBasedBreakfast,
-          imageType: 'photo',
-          description: 'A nutritious and cruelty-free way to start the day with scrambled tofu, baked beans, avocado, vegan sausage, grilled tomato (topped with nut-free pesto), seasoned, grilled mushrooms, hash brown, roasted mixed seeds, toasted seeded sourdough.'
-        },
-        { 
-          name: 'Healthy Acai Bowl', 
+          name: 'Rustic Beef Soup / Ciorbă De Văcuţă', 
           price: '£11.50', 
-          image: healthyAcaiBowl,
+          image: rusticBeefSoup,
           imageType: 'photo',
-          description: 'Served with granola, Greek yogurt, dried coconut and seeds with seasonal fruits'
+          popular: true,
+          description: 'Beef soup is a tangy dish made from beef, vegetables, and spices, served hot with bread, sour cream and hot peppers'
         },
         { 
-          name: 'Organic Nutty Granola', 
+          name: 'Moldavian Stew / Tochitură Moldovenească', 
+          price: '£13.90', 
+          image: moldavianStew,
+          imageType: 'photo',
+          description: 'Moldavian stew with polenta and egg is a hearty dish with slow-cooked pork, rich flavors, and traditional sides'
+        },
+        { 
+          name: 'Cabbage Rolls and Polenta / Sărmăluţe Cu Mămăligă', 
+          price: '£11.90', 
+          image: '🥬',
+          popular: true,
+          description: 'Stuffed cabbage rolls with polenta and sour cream are a traditional dish, rich in flavors and slow-cooked to perfection'
+        },
+      ],
+    },
+    {
+      category: 'soups',
+      items: [
+        { 
+          name: 'Beef Tripe Soup / Ciorbă De Burtǎ', 
+          price: '£11.50', 
+          image: '🍲',
+          description: 'Tripe soup is a creamy dish made from beef tripe, enriched with sour cream and egg, served with bread, sourcream and hot peppers'
+        },
+        { 
+          name: 'Rustic Beef Soup / Ciorbă De Văcuţă', 
+          price: '£11.50', 
+          image: rusticBeefSoup,
+          imageType: 'photo',
+          popular: true,
+          description: 'Beef soup is a tangy dish made from beef, vegetables, and spices, served hot with bread, sour cream and hot peppers'
+        },
+        { 
+          name: 'Smoked Pork with Bean Soup / Ciorbă De Fasole Cu Afumătură', 
+          price: '£10.90', 
+          image: '🍲',
+          description: 'Bean soup with smoked meat is a tangy dish made with beans, smoked meat, and vegetables, served hot with red onion'
+        },
+      ],
+    },
+    {
+      category: 'salads',
+      items: [
+        { 
+          name: 'Greek Salad / Salată Grecească', 
+          price: '£10.50', 
+          image: '🥗',
+          description: 'Greek salad is a fresh and flavorful dish made with tomatoes, cucumbers, olives, feta cheese, and a light dressing'
+        },
+        { 
+          name: 'Bulgarian Salad / Salată Bulgărească', 
           price: '£9.50', 
-          image: '🥣',
-          description: 'Served with yoghurt banana and seasonal fruits'
+          image: '🥗',
+          description: 'Bulgarian salad is a fresh and flavorful dish made with tomatoes, cucumbers, peppers, cheese, ham, egg and a light dressing'
+        },
+        { 
+          name: 'Caesar Salad / Salată Caesar', 
+          price: '£12.90', 
+          image: '🥗',
+          description: 'Classic Caesar salad with crisp romaine lettuce, parmesan cheese, croutons and creamy Caesar dressing'
         },
       ],
     },
     {
-      category: 'brunch',
+      category: 'sideSalads',
       items: [
         { 
-          name: 'Eggs Royale', 
-          price: '£14.95', 
-          image: '🍳',
-          description: 'Two free-range poached eggs, smoked salmon, topped with hollandaise sauce, Sprinkled with roasted mixed seeds.'
+          name: 'Pickled Salad / Salată De Murături', 
+          price: '£3.90', 
+          image: '🥒',
+          popular: true,
+          description: 'The Pickled Salad is a refreshing and tangy mix of assorted pickled vegetables, perfect as a flavorful side dish'
         },
         { 
-          name: 'Eggs Benedict', 
-          price: '£12.95', 
-          image: '🥚',
-          description: 'Two free-range poached eggs, turkey bacon, topped with hollandaise sauce, served on a toasted muffin, drizzled with chilli oil.'
+          name: 'Summer Salad / Salată De Crudități', 
+          price: '£3.90', 
+          image: '🥗',
+          description: 'The Fresh Vegetable Salad is a light and refreshing mix of grated raw vegetables, offering a crisp and healthy taste'
         },
         { 
-          name: 'Hash Benedict', 
-          price: '£11.95', 
-          image: '🥔',
-          description: 'Hash browns, poached or fried eggs, topped with hollandaise sauce and drizzled with chilli oil.',
-          popular: true
+          name: 'Rainbow Cabbage Salad / Salată De Varză Curcubeu', 
+          price: '£3.90', 
+          image: '🥬',
+          description: 'The Rainbow Cabbage Salad is a colorful and crunchy mix of fresh cabbage varieties, offering a vibrant and refreshing taste'
         },
         { 
-          name: 'Eggs Avocado Florentine', 
-          price: '£13.50', 
-          image: '🥑',
-          description: 'Two free-range poached eggs, avocado and spinach, served on a toasted muffin. Sprinkled with roasted mixed seeds.'
+          name: 'Roasted Pepper Salad / Salată ardei copți', 
+          price: '£4.90', 
+          image: '🌶️',
+          description: 'The Roasted Pepper Salad is a flavorful and aromatic dish, made with grilled peppers, lightly marinated for a rich taste'
         },
         { 
-          name: 'Smashed Avocado on Toast', 
-          price: '£11.95', 
-          image: '🍞',
-          description: 'Freshly, smashed avocado served on toasted seeded sourdough with roasted mixed seeds.'
-        },
-        { 
-          name: 'Eggs on Toast', 
-          price: '£10.95', 
-          image: '🍳',
-          description: 'Free-range eggs cooked according to your preference - poached/scrambled/fried, served on toasted seeded sourdough.'
-        },
-        { 
-          name: 'Omelette with Choice of 3 Toppings', 
-          price: '£12.50', 
-          image: '🍳',
-          description: 'With a choice of four toppings: cheese/spinach/mushroom/onion/ tomato/bacon/sausage/peppers - served alongside salad and chips or toast.'
-        },
-        { 
-          name: 'Turkish eggs', 
-          price: '£12.50', 
-          image: '🥚',
-          description: 'A delicious and unique breakfast with greek yoghurt, garlic and poached eggs, sprinkled with spicy, melted butter and garnished with fresh herbs. Served with toasted sourdough'
+          name: 'In House Made Coleslaw / Salată Coleslaw', 
+          price: '£3.90', 
+          image: '🥗',
+          description: 'The Coleslaw Salad is a fresh and creamy mix of finely shredded cabbage, carrots, and a light dressing, perfect as a side dish'
         },
       ],
     },
     {
-      category: 'sweet',
+      category: 'principal',
       items: [
-        { name: 'French Toast', price: '£10.95', image: '🍞' },
-        { name: 'Pancakes', price: '£10.95', image: '🥞', popular: true },
-        { name: 'Turkey Bacon & Maple', price: '£10.95', image: '🥓' },
-        { name: 'Full English with Pancakes', price: '£14.95', image: '🍳' },
-        { name: 'Brioche Benedict', price: '£10.95', image: '🥐' },
-      ],
-    },
-    {
-      category: 'bowls',
-      items: [
-        { name: 'Organic Nutty Granola Bowl', price: '£9.50', image: '🥣' },
-        { name: 'Healthy Acai Bowl', price: '£11.50', image: '🫐' },
+        { 
+          name: 'Moldavian Stew / Tochitură Moldovenească', 
+          price: '£13.90', 
+          image: moldavianStew,
+          imageType: 'photo',
+          description: 'Moldavian stew with polenta and egg is a hearty dish with slow-cooked pork, rich flavors, and traditional sides'
+        },
+        { 
+          name: 'Chicken Schnitzel and Mash / Șnițel de pui cu piure de cartofi', 
+          price: '£13.90', 
+          image: '🍗',
+          description: 'Chicken schnitzel with mashed potatoes and bacon is a crispy and creamy dish, served hot with rich flavors'
+        },
+        { 
+          name: 'Chicken Schnitzel Capresse / Șnițel de pui Capresse', 
+          price: '£14.90', 
+          image: '🍗',
+          description: 'Chicken schnitzel with mozzarella on a salad bed is a crispy and creamy dish, combining rich flavors with freshness'
+        },
+        { 
+          name: 'Cabbage Rolls and Polenta / Sărmăluţe Cu Mămăligă', 
+          price: '£11.90', 
+          image: '🥬',
+          popular: true,
+          description: 'Stuffed cabbage rolls with polenta and sour cream are a traditional dish, rich in flavors and slow-cooked to perfection'
+        },
+        { 
+          name: 'Chicken Liver and Polenta / Ficǎței De Pui Cu Mamaliga', 
+          price: '£10.90', 
+          image: '🍗',
+          description: 'Chicken livers with polenta is a hearty and flavorful dish, served hot for a rich and comforting taste'
+        },
+        { 
+          name: 'Slow cooked pork collar / Ceafă porc la cuptor', 
+          price: '£12.90', 
+          image: '🍖',
+          description: 'Oven-baked pork neck in beer sauce with roasted potatoes is a tender and flavorful dish, rich in aroma and taste'
+        },
+        { 
+          name: 'Chicken Coqueletes & roasted potatoes / Pui Coquelet și cartofi copți', 
+          price: '£16.90', 
+          image: '🍗',
+          description: 'Coquelet chicken with roasted potatoes, polenta, and garlic sauce is a savory dish, served hot with rich flavors'
+        },
+        { 
+          name: 'Beans Stew & smoked sausages / Fasole cu carnati', 
+          price: '£11.50', 
+          image: '🍲',
+          description: 'Beans with smoked meat and pickled salad is a hearty and flavorful dish, combining rich textures with a tangy touch'
+        },
       ],
     },
   ];

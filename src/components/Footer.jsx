@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
-import { ExternalLink, MapPin, Clock, ArrowUp, Instagram, UtensilsCrossed } from 'lucide-react';
+import { ExternalLink, MapPin, Clock, ArrowUp, UtensilsCrossed, Phone } from 'lucide-react';
 import { useRef } from 'react';
 
 const Footer = () => {
@@ -15,27 +15,22 @@ const Footer = () => {
   const socialLinks = [
     {
       name: t.footer.ubereats,
-      url: 'https://www.ubereats.com/gb/store/rada/Fus6nrNiRUuwWgUkyd8LOA?srsltid=AfmBOopeSIMFBOv29L4G-XF3din5iiy6tmdchsQJCu4TUsn-0Fv6PACq',
+      url: 'https://www.ubereats.com/gb/store/moldova-grill%26restaurant/KnK0o9AIT8aIt8TsbTcOWw?srsltid=AfmBOorjqisKVGRpDkNz8CyF0yENF9xu1YdjH4Pmjfa2I6ET0MhnpWgB',
       icon: UtensilsCrossed,
     },
     {
-      name: t.footer.justeat,
-      url: '#',
+      name: t.footer.deliveroo,
+      url: 'https://deliveroo.co.uk/menu/london/chertsey/moldova-grill-and-restaurant?srsltid=AfmBOopn8yQe_PHvZEpfa6XHa8BMMP36eTQBAxv6vXlEr482pFNtvgsk',
       icon: UtensilsCrossed,
-    },
-    {
-      name: t.footer.instagram,
-      url: '#',
-      icon: Instagram,
     },
     {
       name: t.footer.tripadvisor,
-      url: '#',
+      url: 'https://www.tripadvisor.co.uk/Restaurant_Review-g642238-d27992981-Reviews-Moldova_Grill_Restaurant-Chertsey_Surrey_England.html',
       icon: ExternalLink,
     },
     {
       name: t.footer.googlemaps,
-      url: '#',
+      url: 'https://www.google.com/maps/search/?api=1&query=4+Burwood+Parade+Guildford+St+Chertsey+KT16+9AE',
       icon: MapPin,
     },
   ];
@@ -100,12 +95,14 @@ const Footer = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-serif font-bold mb-4">Opening Hours</h3>
-                  <p className="text-white/70 mb-2 text-lg">
+                  <p className="text-white/70 mb-2 text-lg leading-relaxed whitespace-pre-line">
                     {t.footer.hours}
                   </p>
-                  <p className="text-accent font-semibold text-xl">
-                    {t.footer.hoursTime}
-                  </p>
+                  {t.footer.phone && (
+                    <p className="text-white/70 mb-2 text-lg">
+                      Phone: <span className="text-accent font-semibold">{t.footer.phone}</span>
+                    </p>
+                  )}
                 </div>
               </div>
             </motion.div>
@@ -145,7 +142,7 @@ const Footer = () => {
         <div className="container mx-auto container-padding">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-white/60 text-sm text-center sm:text-left">
-              &copy; {new Date().getFullYear()} Rada Coffee & Eatery. {t.footer.rights}
+              &copy; {new Date().getFullYear()} Moldova Grill Restaurant. {t.footer.rights}
             </p>
             <motion.button
               onClick={scrollToTop}

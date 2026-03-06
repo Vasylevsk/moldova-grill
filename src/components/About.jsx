@@ -1,9 +1,9 @@
 import { motion, useInView } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import SectionDivider from './SectionDivider';
-import { Instagram, Facebook, ExternalLink, UtensilsCrossed } from 'lucide-react';
+import { ExternalLink, UtensilsCrossed } from 'lucide-react';
 import { useRef } from 'react';
-import aboutImage from '../assets/about.jpg';
+import aboutImage from '../assets/about.png';
 
 const About = () => {
   const { t } = useLanguage();
@@ -84,7 +84,7 @@ const About = () => {
               <div className="relative rounded-3xl overflow-hidden aspect-[4/3] premium-shadow group image-zoom-container">
                 <img
                   src={aboutImage}
-                  alt="Rada Coffee & Eatery interior"
+                  alt="Moldova Grill Restaurant interior"
                   className="w-full h-full object-cover image-zoom"
                   loading="lazy"
                 />
@@ -137,37 +137,9 @@ const About = () => {
               <div className="w-16 sm:w-20 h-0.5 sm:h-1 bg-accent mx-auto" />
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 max-w-4xl mx-auto">
               <motion.a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative flex items-center gap-4 p-4 sm:p-5 rounded-xl bg-dark-bg/40 border border-white/10 hover:border-accent/50 hover:bg-dark-bg/60 backdrop-blur-sm transition-all duration-300"
-                whileHover={{ y: -3, scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <div className="p-2.5 sm:p-3 rounded-lg bg-gradient-to-br from-purple-500/20 to-pink-500/20 group-hover:from-purple-500/30 group-hover:to-pink-500/30 transition-all duration-300 flex-shrink-0">
-                  <Instagram className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
-                </div>
-                <span className="text-white/80 group-hover:text-accent transition-colors text-sm sm:text-base font-medium">Instagram</span>
-              </motion.a>
-
-              <motion.a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative flex items-center gap-4 p-4 sm:p-5 rounded-xl bg-dark-bg/40 border border-white/10 hover:border-accent/50 hover:bg-dark-bg/60 backdrop-blur-sm transition-all duration-300"
-                whileHover={{ y: -3, scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <div className="p-2.5 sm:p-3 rounded-lg bg-gradient-to-br from-blue-500/20 to-blue-600/20 group-hover:from-blue-500/30 group-hover:to-blue-600/30 transition-all duration-300 flex-shrink-0">
-                  <Facebook className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
-                </div>
-                <span className="text-white/80 group-hover:text-accent transition-colors text-sm sm:text-base font-medium">Facebook</span>
-              </motion.a>
-
-              <motion.a
-                href="https://www.tripadvisor.com"
+                href="https://www.tripadvisor.co.uk/Restaurant_Review-g642238-d27992981-Reviews-Moldova_Grill_Restaurant-Chertsey_Surrey_England.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative flex items-center gap-4 p-4 sm:p-5 rounded-xl bg-dark-bg/40 border border-white/10 hover:border-accent/50 hover:bg-dark-bg/60 backdrop-blur-sm transition-all duration-300"
@@ -181,7 +153,7 @@ const About = () => {
               </motion.a>
 
               <motion.a
-                href="https://www.ubereats.com/gb/store/rada/Fus6nrNiRUuwWgUkyd8LOA?srsltid=AfmBOopeSIMFBOv29L4G-XF3din5iiy6tmdchsQJCu4TUsn-0Fv6PACq"
+                href="https://www.ubereats.com/gb/store/moldova-grill%26restaurant/KnK0o9AIT8aIt8TsbTcOWw?srsltid=AfmBOorjqisKVGRpDkNz8CyF0yENF9xu1YdjH4Pmjfa2I6ET0MhnpWgB"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative flex items-center gap-4 p-4 sm:p-5 rounded-xl bg-dark-bg/40 border border-white/10 hover:border-accent/50 hover:bg-dark-bg/60 backdrop-blur-sm transition-all duration-300"
@@ -195,7 +167,7 @@ const About = () => {
               </motion.a>
 
               <motion.a
-                href="https://www.just-eat.co.uk"
+                href="https://deliveroo.co.uk/menu/london/chertsey/moldova-grill-and-restaurant?srsltid=AfmBOopn8yQe_PHvZEpfa6XHa8BMMP36eTQBAxv6vXlEr482pFNtvgsk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative flex items-center gap-4 p-4 sm:p-5 rounded-xl bg-dark-bg/40 border border-white/10 hover:border-accent/50 hover:bg-dark-bg/60 backdrop-blur-sm transition-all duration-300"
@@ -205,7 +177,7 @@ const About = () => {
                 <div className="p-2.5 sm:p-3 rounded-lg bg-gradient-to-br from-orange-500/20 to-red-500/20 group-hover:from-orange-500/30 group-hover:to-red-500/30 transition-all duration-300 flex-shrink-0">
                   <UtensilsCrossed className="w-5 h-5 sm:w-6 sm:h-6 text-accent" />
                 </div>
-                <span className="text-white/80 group-hover:text-accent transition-colors text-sm sm:text-base font-medium">Just Eat</span>
+                <span className="text-white/80 group-hover:text-accent transition-colors text-sm sm:text-base font-medium">Deliveroo</span>
               </motion.a>
             </div>
           </motion.div>

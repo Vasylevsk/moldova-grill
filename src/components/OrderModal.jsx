@@ -4,8 +4,8 @@ import { useLanguage } from '../context/LanguageContext';
 
 const OrderModal = ({ isOpen, onClose }) => {
   const { t } = useLanguage();
-  const ubereatsUrl = 'https://www.ubereats.com/gb/store/rada/Fus6nrNiRUuwWgUkyd8LOA?srsltid=AfmBOopeSIMFBOv29L4G-XF3din5iiy6tmdchsQJCu4TUsn-0Fv6PACq';
-  const justeatUrl = 'https://www.just-eat.co.uk';
+  const ubereatsUrl = 'https://www.ubereats.com/gb/store/moldova-grill%26restaurant/KnK0o9AIT8aIt8TsbTcOWw?srsltid=AfmBOorjqisKVGRpDkNz8CyF0yENF9xu1YdjH4Pmjfa2I6ET0MhnpWgB';
+  const deliverooUrl = 'https://deliveroo.co.uk/menu/london/chertsey/moldova-grill-and-restaurant?srsltid=AfmBOopn8yQe_PHvZEpfa6XHa8BMMP36eTQBAxv6vXlEr482pFNtvgsk';
 
   if (!isOpen) return null;
 
@@ -36,14 +36,14 @@ const OrderModal = ({ isOpen, onClose }) => {
           className="relative z-10 w-full max-w-md bg-dark-section rounded-3xl border border-white/10 premium-shadow overflow-hidden"
         >
           {/* Close Button */}
-          <button
+          <motion.button
             onClick={onClose}
             className="absolute top-4 right-4 z-20 p-2 rounded-full bg-white/5 hover:bg-white/10 transition-colors"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
             <X className="w-5 h-5 text-white/70" />
-          </button>
+          </motion.button>
 
           {/* Content */}
           <div className="p-8 sm:p-10">
@@ -79,9 +79,9 @@ const OrderModal = ({ isOpen, onClose }) => {
                 <ExternalLink className="w-5 h-5 text-white/40 group-hover:text-accent transition-colors flex-shrink-0" />
               </motion.a>
 
-              {/* Just Eat */}
+              {/* Deliveroo */}
               <motion.a
-                href={justeatUrl}
+                href={deliverooUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 p-5 rounded-2xl bg-dark-bg/50 border border-white/10 hover:border-accent/50 hover:bg-dark-bg/70 transition-all duration-300"
@@ -92,8 +92,8 @@ const OrderModal = ({ isOpen, onClose }) => {
                   <UtensilsCrossed className="w-6 h-6 text-accent" />
                 </div>
                 <div className="flex-1">
-                  <h4 className="text-lg font-semibold text-white mb-1">{t.orderModal.justeat}</h4>
-                  <p className="text-white/60 text-sm">{t.orderModal.justeatDesc}</p>
+                  <h4 className="text-lg font-semibold text-white mb-1">{t.orderModal.deliveroo}</h4>
+                  <p className="text-white/60 text-sm">{t.orderModal.deliverooDesc}</p>
                 </div>
                 <ExternalLink className="w-5 h-5 text-white/40 group-hover:text-accent transition-colors flex-shrink-0" />
               </motion.a>

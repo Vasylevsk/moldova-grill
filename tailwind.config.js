@@ -7,9 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark-bg': '#0a0a0a',
-        'dark-section': '#111111',
-        'accent': '#849b45',
+        'dark-bg': '#0d0d0d',
+        'dark-section': '#151515',
+        'accent': '#3B82F6',
+        'accent-light': '#60A5FA',
+        'accent-dark': '#2563EB',
+        'navy-blue': '#3B82F6',
+        'deep-blue': '#2563EB',
       },
       fontFamily: {
         'serif': ['Playfair Display', 'Georgia', 'serif'],

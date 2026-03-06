@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   // Base path for GitHub Pages - matches repository name
-  base: '/radacafe/',
+  base: '/moldova-grill/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
